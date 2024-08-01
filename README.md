@@ -15,7 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer("Server=localhost;Database=AuthDB;User Id=sa;Password=;TrustServerCertificate=true;"));
 
 //delete the default migrations
+
 dotnet ef migrations add "CreateIdentitySchema"
-dotnet ef database update
-dotnet ef migrations add InitialCreate
+
 dotnet ef database update
